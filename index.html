@@ -18,44 +18,43 @@
 
         } 
         
-      h2 {
+      
+      
+      
+      h2:nth-child(2){
           padding: 5px;
-          color: white;
-          background-color: blue;
+          transition-duration: 0.5s;
+          transition-timing-function:linear;
+          background-color: yellowgreen;
+          color: rgb(250, 244, 244);
+          
+      }
+      h2:nth-child(1){
+          padding: 5px;
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in;
+          background-color: rgb(51, 81, 180);
+          color: rgb(250, 244, 244);
+
+
       }
       h2:hover{
           background-color: red;
           cursor: pointer;
       }
-      div::selection{
-          background: lime;
-      }
-      input:focus{
-          background-color: magenta;
-          color: maroon;
-          font-size: 2rem;
-      }
-      h2::after{
-          content: "i am after";
-          font-size: 1rem;
-          color: maroon;
-          position: relative;
-      }
-      h2::before{
-          content: "i am before";
-          font-size: 1rem;
-          color: maroon;
-          position: relative;
-      }
+          
+          
+          
     </style>
 </head>
 <body>
     
 
     
-   <h2> i am Heading two</h2>
-   <div>i am a div again</div>
-   <input type="text" />
+   
+    <h2> i am Heading two</h2>
+    <h2> i am Heading two</h2>
+   
 </div>
     
  </body>
