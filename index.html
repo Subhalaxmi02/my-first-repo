@@ -7,71 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <link rel="stylesheet" href="./assets/CSS/style.css"/>
     <title>TO DO LIST</title>
-    <style></style>
+    <style>
+      div.parent{
+        background: black;
+        color: white;
+      
+     }
+     @media (max-width: 500px) {
+          div.parent{
+              background: yellow !important;
+              
+
+          }
+        
+     }
+     @media (max-width: 700px) {
+          div.parent{
+              background: blueviolet;
+              font-size: 1rem;
+          }
+        }
+   </style>
 </head>
 <body>
+     <div class="parent"> 
+         <h1>i'm a heading</h1>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum inventore repudiandae quod consequatur illo. Minus hic nemo dolor maxime necessitatibus harum aliquam. Soluta, deleniti. Perferendis repudiandae obcaecati dicta ipsam voluptatem!
+     </div>
     
-    <header></header>
-    <section class="mainsec">
-        <div class="main">
-            <div class="main_header">
-                <p>Todo List</p>
-                <div class="dl_button">
-                    <button class="dl_btn"></button>
-                </div>
-            </div>
-            <div class="main_insert">
-                <input placeholder="Add a task to the list..." type="text" />
-                <button class="addtask_btn">+</button>
-            </div>
-            <div class="forscroll">
-                <div class="main_list">
-                    <div class="taskbar">
-                        <p>1 items</p>
-                        <div class="task_status">
-                            <button>All</button>
-                            <button>Pending</button>
-                            <button>Completed</button>
-                        </div>
-                        <button class="clr_btn">Clear</button>
-                    </div>
-                </div>
-                <div class="list_items">
-                    <!---<div class="items">
-                         <div class="checkbutton">
-                            <i class="fa fa-check-circle"></i>
-                        </div>
-                        <div class="item">
-                            <p></p>
-                        </div>
-                        <div class="list_tools">
-                            <i class="fa fa-times"></i>
-                            <i class="fas fa-bars"></i>
-                    </div>-->
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-
-    
-   
-    
-    <footer>
-        <div>Subhalaxmi Mishra</div>
-        <div>
-            <a href="https://github.com/Subhalaxmi02">Subhalaxmi02
-                <img class="social" src="./assets/images/github.png" alt=""/>
-            </a>
-            <a href="https://www.linkedin.com/in/subhalaxmi-mishra-017a601a0/">subhalaxmi-mishra
-                <img class="social" src="./assets/images/linkedin.png" alt=""/>
-            </a>
-            <a href="https://www.instagram.com/subhalaxmi_24_2/">subhalaxmi_24_2
-                <img class="social" src="./assets/images/instagram.png" alt=""/>
-            </a>
-        </div>
-    </footer>
  </body>
 
 </html>
