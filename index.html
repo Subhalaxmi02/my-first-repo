@@ -9,32 +9,49 @@
     <title>TO DO LIST</title>
     <style>
       div.parent{
-        background: black;
-        color: white;
+        background-color: black;
+        height: 400px;
+        display: flex;
+        align-items: stretch;   
       
      }
-     @media (max-width: 500px) {
-          div.parent{
-              background: yellow !important;
-              
+     
+     div.child{
+         background-color: yellow;
+         flex-basis: 80%;
 
-          }
-        
      }
-     @media (max-width: 700px) {
-          div.parent{
-              background: blueviolet;
-              font-size: 1rem;
-          }
+    div.sidebar{
+        background-color: red;
+        flex-basis: 20%;
+    }
+    @media (max-width: 550px){
+        div.sidebar{
+            animation: 5s expand linear infinite;
         }
+        div.child{
+            flex-basis: 100%;
+        }
+    }
+    @keyframes expand{
+        0%{
+            flex-basis: 0%;
+
+        }
+        100%{
+            flex-basis: 50%;
+        }
+    }
+   
    </style>
 </head>
 <body>
      <div class="parent"> 
-         <h1>i'm a heading</h1>
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum inventore repudiandae quod consequatur illo. Minus hic nemo dolor maxime necessitatibus harum aliquam. Soluta, deleniti. Perferendis repudiandae obcaecati dicta ipsam voluptatem!
-     </div>
+         <div class="sidebar"></div>
+         <div class="child"></div>
+    </div>
     
  </body>
 
-</html>
+
+ </html>
