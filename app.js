@@ -1,12 +1,6 @@
-//string
-console.log(typeof "hello world")
-console.log(typeof "d")
-//numbers
-console.log(typeof 1)
-console.log(typeof 1.2)
-console.log(typeof  -1)
-console.log(typeof -1.2)
-//booleans
+var arr=[1,2,3,4]
 
-console.log(typeof true)
-console.log(typeof false)
+console.log(arr)
+arr.push(5)
+console.log(arr)
+console.log(arr.length)
