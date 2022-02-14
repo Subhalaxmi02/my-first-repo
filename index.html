@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,15 +6,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
     
-    <title>Java Script</title>
-    <script src="./app.js"></script>
-    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
 </head>
-<body class="dark">
-     
-    
- </body>
 
+<body>
+    <header></header>
+    <section class="mainsec">
+        <div class="main">
+            <div class="main_header">
+                <p>Todo List</p>
+                <div class="dl_button">
+                    <button class="dl_btn"></button>
+                </div>
+            </div>
+            <div class="main_insert">
+                <input placeholder="Add a task to the list..." type="text" />
+                <button class="addtask_btn">+</button>
+            </div>
+            <div class="forscroll">
+                <div class="main_list">
+                    <div class="taskbar">
+                        <p>1 items</p>
+                        <div class="task_status">
+                            <button>All</button>
+                            <button>Pending</button>
+                            <button>Completed</button>
+                        </div>
+                        <button class="clr_btn">Clear</button>
+                    </div>
+                </div>
+                <div class="list_items">
+                    <!---<div class="items">
+                         <div class="checkbutton">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="item">
+                            <p></p>
+                        </div>
+                        <div class="list_tools">
+                            <i class="fa fa-times"></i>
+                            <i class="fas fa-bars"></i>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="author_name">
+            <a href="https://github.com/priyanshiisingh">Subhalaxmi Mishra</a>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/" ><img src="assets/images/instagram.png" width="50px" /></a>
+                
+            
+            <a href="https://github.com/Subhalaxmi02" ><img src="assets/images/github.png" width="50px" /></a>
+               
+            
+            <a href="https://www.linkedin.com/in/subhalaxmi-mishra-017a601a0/" ><img src="assets/images/linkedin.png" width="50px" />
+                
+            </a>
+        </div>
+    </footer>
+</body>
 
- </html>
+</html>
